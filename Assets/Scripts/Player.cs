@@ -1,10 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
+    public static Vector2 spawnLoc = new Vector2(-1.5f, 0.5f);
+    
     public float movementSpeed = 1f; //lower is faster
     public LayerMask collision;
     public LayerMask trigger;
@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     
     public bool dialogLock = false;
     
-    private float _moveCooldown = 0f;
     private Animator _animator;
 
     public enum Dir
@@ -44,6 +43,7 @@ public class Player : MonoBehaviour
                 break;
         }
         _animator = GetComponent<Animator>();
+        transform.position = spawnLoc;
         
         _animator.SetFloat(X, _dir.x);
         _animator.SetFloat(Y, _dir.y);

@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20763172b455145a5f94b932ba1f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: GGV
+  destination: GGV_ROOM
 --- !u!1 &1036441366
 GameObject:
   m_ObjectHideFlags: 0

@@ -1024,6 +1024,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnLoc.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnLoc.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: destination
+      value: GGV_HALL
+      objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564469, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_Name
       value: Trigger (1)
@@ -7134,6 +7146,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnLoc.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnLoc.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: destination
+      value: GGV_HALL
+      objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564469, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_Name
       value: Trigger
