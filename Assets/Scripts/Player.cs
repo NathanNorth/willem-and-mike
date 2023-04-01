@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Vector2 spawnLoc = new Vector2(-1.5f, 0.5f);
-    
+    public static Vector2 spawnLoc = new(-1.5f, 0.5f);
+    public static Dir? spawnDir = null;
+
     public float movementSpeed = 1f; //lower is faster
     public LayerMask collision;
     public LayerMask trigger;
@@ -30,6 +31,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        //spawn characteristics
+        transform.position = spawnLoc;
+        if (spawnDir != null) startingDirection = spawnDir.Value;
         switch (startingDirection)
         {
             case Dir.North: _dir = Vector2.up;
@@ -42,9 +46,9 @@ public class Player : MonoBehaviour
             case Dir.West: _dir = Vector2.left;
                 break;
         }
-        _animator = GetComponent<Animator>();
-        transform.position = spawnLoc;
         
+        //animation
+        _animator = GetComponent<Animator>();
         _animator.SetFloat(X, _dir.x);
         _animator.SetFloat(Y, _dir.y);
     }

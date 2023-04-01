@@ -1025,6 +1025,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnDir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.x
       value: -1.5
       objectReference: {fileID: 0}
@@ -7117,6 +7121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Undeclared
       objectReference: {fileID: 0}
+    - target: {fileID: 8731232646829950657, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
+      propertyPath: startingDirection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
 --- !u!1001 &3818936723591101629
@@ -7126,6 +7134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
+      propertyPath: spawnDir
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.x
       value: -1.5
