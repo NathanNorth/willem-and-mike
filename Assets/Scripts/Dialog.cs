@@ -62,6 +62,10 @@ public class Dialog : MonoBehaviour
         
         for (float i = 0; i < time; i += Time.deltaTime)
         {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                i += Time.deltaTime;
+            }
             output.text = text.Substring(0, (int)((i / time) * text.Length));
             
             yield return null;
