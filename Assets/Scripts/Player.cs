@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     private Vector2 _dir = Vector2.down; // Hold player direction
     private static readonly int X = Animator.StringToHash("X");
     private static readonly int Y = Animator.StringToHash("Y");
+    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+
+    private bool walkingLock = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +33,7 @@ public class Player : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _dir,  1);
             if(hit.transform != null) hit.transform.GetComponent<Dialog>()?.TriggerDialog(this); //try trigger dialog
         }
-        _moveCooldown = Mathf.Max(_moveCooldown - Time.deltaTime, 0f);
-        if (_moveCooldown > 0f) return; //we dont run any ticks while on cooldown
+        if (walkingLock) return; //we dont run any ticks while on cooldown
         if (GetWASD().Equals(Vector2.zero)) return; //we dont run any ticks while no input pressed
         
         //actually run tick
@@ -76,6 +78,8 @@ public class Player : MonoBehaviour
 
     private IEnumerator MoveRoutine(Vector2 current, Vector2 potential)
     {
+        _animator.SetBool(IsWalking, true);
+        walkingLock = true;
         for (var t = 0f; t < movementSpeed; t += Time.deltaTime)
         {
             this.transform.position = Vector2.Lerp(current, potential, t/movementSpeed);
@@ -83,6 +87,8 @@ public class Player : MonoBehaviour
             yield return null;
         }
 
+        walkingLock = false;
         this.transform.position = potential;
+        _animator.SetBool(IsWalking, false);
     }
 }
