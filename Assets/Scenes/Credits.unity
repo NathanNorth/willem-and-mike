@@ -282,17 +282,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits
+  m_text: 'Created for Willliam & Mary Cypher VIII
 
 
-    Ethan
-
-    Miranda
-
-    Whitt
+    Lead Devloper - Ethan South
 
 
-    Font - Dogica Pixel'
+    Developer
+    - Whitt Sanders
+
+
+    Art - Miranda Manning'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffcb82eeda7bb3443976e459a35b20af, type: 2}
   m_sharedMaterial: {fileID: -2874393840381166949, guid: ffcb82eeda7bb3443976e459a35b20af, type: 2}
