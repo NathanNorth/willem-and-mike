@@ -6,11 +6,14 @@ using UnityEngine.Serialization;
 public class Player : MonoBehaviour
 {
     public float movementSpeed = 1f; //lower is faster
+    public LayerMask collision;
+    public LayerMask trigger;
+    
+    public bool dialogLock = false;
+    
     private float _moveCooldown = 0f;
     private Animator _animator;
-
-    public bool dialogLock = false;
-
+    
     private Vector2 _dir = Vector2.down; // Hold player direction
     private static readonly int X = Animator.StringToHash("X");
     private static readonly int Y = Animator.StringToHash("Y");
@@ -27,10 +30,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //scene changes
+        RaycastHit2D currentTileCast = Physics2D.Raycast(transform.position, Vector2.up, .25f, trigger); //stay inside tile
+        if(currentTileCast && currentTileCast.transform != null) currentTileCast.transform.gameObject.GetComponent<SceneTrigger>().TriggerSceneChange();
+        
         if (dialogLock) return; //don't move while in dialog
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, _dir,  1);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, _dir,  1, collision);
             if(hit.transform != null) hit.transform.GetComponent<Dialog>()?.TriggerDialog(this); //try trigger dialog
         }
         if (walkingLock) return; //we dont run any ticks while on cooldown
@@ -46,7 +53,7 @@ public class Player : MonoBehaviour
         _animator.SetFloat(X, _dir.x);
         _animator.SetFloat(Y, _dir.y);
 
-            bool cast = Physics2D.Raycast(current, _dir, 1);
+        bool cast = Physics2D.Raycast(current, _dir, 1, collision);
         if (!cast)
         {
             StartCoroutine(MoveRoutine(current, potential));

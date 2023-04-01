@@ -184,6 +184,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.2
+  collision:
+    serializedVersion: 2
+    m_Bits: 1
+  trigger:
+    serializedVersion: 2
+    m_Bits: 64
   dialogLock: 0
 --- !u!95 &730109905
 Animator:
