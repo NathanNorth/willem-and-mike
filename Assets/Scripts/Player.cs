@@ -25,7 +25,8 @@ public class Player : MonoBehaviour
         bool cast = Physics2D.Raycast(current, dir, 1);
         if (!cast)
         {
-            transform.position = potential;
+            StartCoroutine(CoRoutine(current, potential));
+            // transform.position = potential;
             // transform.LookAt(dir);
         }
     }
@@ -49,6 +50,19 @@ public class Player : MonoBehaviour
         {
             movement.x += 1;
         }
+
         return movement;
+    }
+
+    private IEnumerator CoRoutine(Vector2 current, Vector2 potential)
+    {
+        for (var t = 0f; t < movementSpeed; t += Time.deltaTime)
+        {
+            this.transform.position = Vector2.Lerp(current, potential, t/movementSpeed);
+
+            yield return null;
+        }
+
+        this.transform.position = potential;
     }
 }
