@@ -18,16 +18,17 @@ public class Player : MonoBehaviour
         Debug.Log(moveCooldown);
         moveCooldown = Mathf.Max(moveCooldown - Time.deltaTime, 0f);
         if (moveCooldown > 0f) return; //we dont run any ticks while on cooldown
-        if (!GetWASD().Equals(Vector2.zero)) moveCooldown = movementSpeed;
+        if (GetWASD().Equals(Vector2.zero)) return; //we dont run any ticks while no input pressed
+        
+        //actually run tick
+        moveCooldown = movementSpeed;
         Vector2 current = this.transform.position;
         Vector2 potential = current + GetWASD();
         Vector2 dir = potential - current;
         bool cast = Physics2D.Raycast(current, dir, 1);
         if (!cast)
         {
-            StartCoroutine(CoRoutine(current, potential));
-            // transform.position = potential;
-            // transform.LookAt(dir);
+            StartCoroutine(MoveRoutine(current, potential));
         }
     }
 
@@ -54,7 +55,7 @@ public class Player : MonoBehaviour
         return movement;
     }
 
-    private IEnumerator CoRoutine(Vector2 current, Vector2 potential)
+    private IEnumerator MoveRoutine(Vector2 current, Vector2 potential)
     {
         for (var t = 0f; t < movementSpeed; t += Time.deltaTime)
         {
