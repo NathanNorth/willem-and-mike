@@ -44,7 +44,7 @@ public class Dialog : MonoBehaviour
         }
     }
 
-    public void TriggerDialog(Player player)
+    public virtual void TriggerDialog(Player player)
     {
         inDialog = true;
         canvas.gameObject.SetActive(true);

@@ -34,20 +34,15 @@ public class Player : MonoBehaviour
         //spawn characteristics
         transform.position = spawnLoc;
         if (spawnDir != null) startingDirection = spawnDir.Value;
-        switch (startingDirection)
+        _dir = startingDirection switch
         {
-            case Dir.North: _dir = Vector2.up;
-                Debug.Log("up");
-                break;
-            case Dir.South: _dir = Vector2.down;
-                break;
-            case Dir.East: _dir = Vector2.right;
-                break;
-            case Dir.West: _dir = Vector2.left;
-                break;
-        }
-        
-        //animation
+            Dir.North => Vector2.up,
+            Dir.South => Vector2.down,
+            Dir.East => Vector2.right,
+            Dir.West => Vector2.left,
+            _ => _dir
+        };
+
         _animator = GetComponent<Animator>();
         _animator.SetFloat(X, _dir.x);
         _animator.SetFloat(Y, _dir.y);
@@ -64,7 +59,9 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _dir,  1, collision);
-            if(hit.transform != null) hit.transform.GetComponent<Dialog>()?.TriggerDialog(this); //try trigger dialog
+            if(hit.transform != null) {
+                hit.transform.GetComponent<Dialog>()?.TriggerDialog(this); //try trigger dialog
+            }
         }
         if (_walkingLock) return; //we dont run any ticks while on cooldown
         if (GetWASD().Equals(Vector2.zero)) return; //we dont run any ticks while no input pressed
