@@ -19,3 +19,8 @@ You are Undeclared, a student at Willem And Mike.
 - you are running away from your premajor adivisor
 - maybe he physically chases you
 - you talk about with other people getting an email to declare
+
+# music
+- alma mater opening
+- maybe credits song
+- ambience for everything else
