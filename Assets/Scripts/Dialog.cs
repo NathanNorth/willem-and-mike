@@ -26,7 +26,7 @@ public class Dialog : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Debug.Log(i + " , " + text.Length);
+        // Debug.Log(i + " , " + text.Length);
         if (!inDialog) return;
         if (Input.GetKeyDown(KeyCode.Space) && !revealLock) //make sure we are not locked
         {

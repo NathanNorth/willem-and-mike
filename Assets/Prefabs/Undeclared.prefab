@@ -190,6 +190,7 @@ MonoBehaviour:
   trigger:
     serializedVersion: 2
     m_Bits: 64
+  startingDirection: 3
   dialogLock: 0
 --- !u!95 &730109905
 Animator:
