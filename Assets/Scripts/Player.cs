@@ -1,31 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
     public float movementSpeed = 1f; //lower is faster
-    private float moveCooldown = 0f;
+    private float _moveCooldown = 0f;
+    
+    //Initialize player sprites
+    private SpriteRenderer _render;
+    public Sprite north;
+    public Sprite south;
+    public Sprite east;
+    public Sprite west;
+
+    private Vector2 _dir = Vector2.down; // Hold player direction
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        _render = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(moveCooldown);
-        moveCooldown = Mathf.Max(moveCooldown - Time.deltaTime, 0f);
-        if (moveCooldown > 0f) return; //we dont run any ticks while on cooldown
+        // Debug.Log(_moveCooldown);
+        _moveCooldown = Mathf.Max(_moveCooldown - Time.deltaTime, 0f);
+        if (_moveCooldown > 0f) return; //we dont run any ticks while on cooldown
         if (GetWASD().Equals(Vector2.zero)) return; //we dont run any ticks while no input pressed
         
+        
+        if (_dir == Vector2.down) // set player direction
+        {
+            _render.sprite = south;
+        }
+        else if (_dir == Vector2.up)
+        {
+            _render.sprite = north;
+        }
+        else if (_dir == Vector2.right)
+        {
+            _render.sprite = east;
+        }
+        else if (_dir == Vector2.left)
+        {
+            _render.sprite = west;
+        }
         //actually run tick
-        moveCooldown = movementSpeed;
+        _moveCooldown = movementSpeed;
         Vector2 current = this.transform.position;
         Vector2 potential = current + GetWASD();
-        Vector2 dir = potential - current;
-        bool cast = Physics2D.Raycast(current, dir, 1);
+        _dir = potential - current;
+        bool cast = Physics2D.Raycast(current, _dir, 1);
         if (!cast)
         {
             StartCoroutine(MoveRoutine(current, potential));
