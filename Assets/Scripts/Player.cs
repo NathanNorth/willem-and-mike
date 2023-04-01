@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
         if (GetWASD().Equals(Vector2.zero)) return; //we dont run any ticks while no input pressed
         
         //actually run tick
-        _moveCooldown = movementSpeed;
         Vector2 current = this.transform.position;
         Vector2 potential = current + GetWASD();
         _dir = potential - current;
