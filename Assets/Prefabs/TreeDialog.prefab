@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: null
-  message: Good afternoon UNDELCLARED. Its nice to see your face, even if you're
+  message: Good afternoon UNDECLARED. It's nice to see your face, even if you're
     TWO HOURS late!
   children:
   - {fileID: 4825536573524483852}
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: Apologize
-  message: Its okay, we all understand that life happens :)
+  message: It's okay, we all understand that life happens :)
   children:
   - {fileID: 1361633317}
 --- !u!114 &7957064097424226435
@@ -504,8 +504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: null
-  message: Well anyway, as your MAJOR ADVISOR its my job to see that you find a start
-    to a fufilling career with your education here are Willem and Mike.
+  message: Well anyway, as your MAJOR ADVISOR it's my job to see that you find a
+    start to a fufilling career with your education here are Willem and Mike.
   children:
   - {fileID: 1361633318}
 --- !u!114 &1361633318
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: null
   message: The day soon approaches to declare your major, and it seems like you have
-    no idea what you want to do! However I'm here to help
+    no idea what you want to do! However, I'm here to help
   children:
   - {fileID: 1361633319}
 --- !u!114 &1361633319
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: Practically Useless
-  message: Thats fantastic, you'll fit right in as a COMPUTER SCIENCE major.
+  message: That's fantastic, you'll fit right in as a COMPUTER SCIENCE major.
   children:
   - {fileID: 1521613060852367481}
 --- !u!114 &1361633321
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: Thats right
+  description: That's right
   message: This level of disrespect is COMPLETELY unacceptable, I think I might need
     to have a talk with my friend CATHY about this!
   children: []
