@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 6503374562828142167}
   - component: {fileID: 4435727377170134952}
   - component: {fileID: 7909172603394517052}
+  - component: {fileID: 1468932830631666560}
   m_Layer: 0
   m_Name: TreeDialog
   m_TagString: Untagged
@@ -639,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: null
+  description: ADVISOR
   message: Well that concludes our meeting, I'm sure you're tired and could use some
     good rest back at your dorm in LION L
   children: []
@@ -693,6 +694,22 @@ MonoBehaviour:
   description: That's right
   message: This level of disrespect is COMPLETELY unacceptable, I think I might need
     to have a talk with my friend CATHY about this!
+  children:
+  - {fileID: 1468932830631666560}
+--- !u!114 &1468932830631666560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: LOSE
+  message: You chose choice
   children: []
 --- !u!1 &4473545523852395074
 GameObject:
