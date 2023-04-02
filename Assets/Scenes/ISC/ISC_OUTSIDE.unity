@@ -11230,6 +11230,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
+      propertyPath: destination
+      value: PATH_TO_ISC_CONSTRUCTION
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
       propertyPath: errorMessage
       value: You must visit your PREMAJOR ADVISOR before returning to your dorm.
       objectReference: {fileID: 0}
