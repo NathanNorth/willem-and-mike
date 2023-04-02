@@ -11,7 +11,7 @@ public class SceneTrigger : MonoBehaviour
     
     public virtual void TriggerSceneChange()
     {
-        GameObject.FindObjectOfType<Player>().dialogLock = true;
+        FindObjectOfType<Player>().dialogLock = true;
         StartCoroutine(AudioManager.currentManager.StartFadeOut());
         Invoke(nameof(ActuallyDoTheChange), AudioManager.currentManager.fadeDuration + 0.01f);
     }

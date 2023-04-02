@@ -12,6 +12,8 @@ public class ProgressLockedSceneTrigger: SceneTrigger
     public CanvasGroup group;
     public TextMeshProUGUI text;
 
+    private Coroutine current = null;
+
     private void Start()
     {
         text.text = errorMessage;
@@ -23,7 +25,8 @@ public class ProgressLockedSceneTrigger: SceneTrigger
         if(Progress.stage ==  lockUntilStageIs) base.TriggerSceneChange();
         else
         {
-            StartCoroutine(Fade());
+            if(current != null) StopCoroutine(current);
+            current = StartCoroutine(Fade());
         }
     }
 
