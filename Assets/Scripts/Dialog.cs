@@ -12,9 +12,9 @@ public class Dialog : MonoBehaviour
     public Canvas canvas;
     public TextMeshProUGUI output;
 
-    private bool inDialog = false;
-    private int i = 0;
-    private Player player;
+    protected bool inDialog = false;
+    protected int i = 0;
+    protected Player player;
 
     // Start is called before the first frame update
     private void Awake()
@@ -24,7 +24,7 @@ public class Dialog : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    protected virtual void LateUpdate()
     {
         // Debug.Log(i + " , " + text.Length);
         if (!inDialog) return;
@@ -55,12 +55,12 @@ public class Dialog : MonoBehaviour
         this.player.dialogLock = true;
     }
 
-    private bool revealLock = false;
-    private IEnumerator TextReveal(string text, float time)
+    protected const float textScrollSpeed = .05f; //lower is faster
+    protected bool revealLock = false;
+    protected IEnumerator TextReveal(string text, float time)
     {
         revealLock = true;
-        // const float textScrollSpeed = .05f; //lower is faster
-        // time = time * textScrollSpeed * text.Length;
+        time = time * textScrollSpeed * text.Length;
         
         for (float i = 0; i < time; i += Time.deltaTime)
         {

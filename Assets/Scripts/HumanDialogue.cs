@@ -24,7 +24,7 @@ public class HumanDialogue : Dialog
         return new[]{ north, east, south, west };
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = Dirs()[(int) startingDirection];
@@ -44,7 +44,7 @@ public class HumanDialogue : Dialog
         { new Vector2(-1, 0), 3},
     };
 
-    private void FacePlayer(Vector2 playerPos)
+    protected void FacePlayer(Vector2 playerPos)
     {
         Vector2 myPos = this.transform.position;
         Vector2 dir = playerPos - myPos;
