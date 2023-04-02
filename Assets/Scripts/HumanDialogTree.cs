@@ -2,6 +2,7 @@
 using System.Text;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HumanDialogTree: HumanDialogue
 {
@@ -48,13 +49,30 @@ public class HumanDialogTree: HumanDialogue
             else if (node.children.Length == 1) //no choice
             {
                 node = node.children[0];
+                StateChecks(node.description);
             }
             else //free will
             {
                 node = node.children[option];
-
             }
             StartCoroutine(TextReveal(node.message, speakingSpeed));
+        }
+    }
+
+    private static void StateChecks(string description)
+    {
+        switch (description)
+        {
+            case "LOSE":
+                SceneManager.LoadScene("GameOver");
+                break;
+            case "ADVISOR":
+                Debug.Log("ADVISOR STATE SET");
+                Progress.stage = Progress.GameStage.ReturnToBed;
+                break;
+            case "WIN":
+                SceneManager.LoadScene("Credits");
+                break;
         }
     }
 

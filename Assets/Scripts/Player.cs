@@ -43,13 +43,21 @@ public class Player : MonoBehaviour
         _animator.SetFloat(Y, _dir.y);
     }
 
+    public bool rayCastLock = false;
+
     // Update is called once per frame
     void Update()
     {
-        //scene changes
-        RaycastHit2D currentTileCast = Physics2D.Raycast(transform.position, Vector2.up, .25f, trigger); //stay inside tile
-        if(currentTileCast && currentTileCast.transform != null) currentTileCast.transform.gameObject.GetComponent<SceneTrigger>().TriggerSceneChange();
-        
+        if (!rayCastLock)
+        {
+            //scene changes
+            RaycastHit2D currentTileCast = Physics2D.Raycast(transform.position, Vector2.up, .25f, trigger); //stay inside tile
+            if (currentTileCast && currentTileCast.transform != null)
+            {
+                currentTileCast.transform.gameObject.GetComponent<SceneTrigger>().TriggerSceneChange();
+            }
+        }
+
         if (dialogLock) return; //don't move while in dialog
         if (Input.GetKeyDown(KeyCode.Space))
         {
