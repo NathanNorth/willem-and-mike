@@ -4034,11 +4034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2342271745400871073, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 2342271745400871073, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -2.46
       objectReference: {fileID: 0}
     - target: {fileID: 2342271745400871073, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4103,11 +4103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: destination
-      value: GGV_HALL
+      value: PATH_TO_ISC_CONSTRUCTION
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564469, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_Name
-      value: Trigger
+      value: to isc path
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564470, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_RootOrder
@@ -4115,7 +4115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564470, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -10.5
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564470, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_LocalPosition.y
