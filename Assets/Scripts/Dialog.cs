@@ -66,7 +66,7 @@ public class Dialog : MonoBehaviour
             {
                 i += Time.deltaTime * 2;
             }
-            output.text = text.Substring(0, (int)((i / time) * text.Length));
+            output.text = text.Substring(0, (int)((Mathf.Min(1, i / time)) * text.Length));
             
             yield return null;
         }
