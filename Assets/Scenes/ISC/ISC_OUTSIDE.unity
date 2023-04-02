@@ -11230,6 +11230,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
+      propertyPath: spawnDir
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
+      propertyPath: spawnLoc.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
+      propertyPath: spawnLoc.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750461522050328022, guid: 8d9b433a31e855b40a666cea7bd940a3, type: 3}
       propertyPath: destination
       value: PATH_TO_ISC_CONSTRUCTION
       objectReference: {fileID: 0}
