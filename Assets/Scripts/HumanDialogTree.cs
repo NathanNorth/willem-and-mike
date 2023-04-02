@@ -45,8 +45,15 @@ public class HumanDialogTree: HumanDialogue
                 i = 0; //rest i
                 return;
             }
+            else if (node.children.Length == 1) //no choice
+            {
+                node = node.children[0];
+            }
+            else //free will
+            {
+                node = node.children[option];
 
-            node = node.children[option];
+            }
             StartCoroutine(TextReveal(node.message, speakingSpeed));
         }
     }
@@ -70,7 +77,7 @@ public class HumanDialogTree: HumanDialogue
     private int option = 0;
     private void DisplayOptions()
     {
-        if (node.children.Length == 0) return; //we dont do crap if no child
+        if (node.children.Length < 2) return; //we dont do crap if no child
         optionsParent.SetActive(true);
         StringBuilder b = new StringBuilder();
         var opts = node.children.Select(o => o.description).ToArray();

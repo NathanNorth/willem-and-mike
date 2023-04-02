@@ -1152,30 +1152,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 533825861410311202, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-      propertyPath: message
-      value: What a fucking looser I hate masculinity, are you sure you aren't just
-        an egg?
-      objectReference: {fileID: 0}
-    - target: {fileID: 533825861410311202, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-      propertyPath: description
-      value: Boy
-      objectReference: {fileID: 0}
-    - target: {fileID: 533825861410311202, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-      propertyPath: children.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 533825861410311202, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-      propertyPath: children.Array.data[0]
-      value: 
-      objectReference: {fileID: 1361633308}
-    - target: {fileID: 533825861410311202, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-      propertyPath: children.Array.data[1]
-      value: 
-      objectReference: {fileID: 1361633309}
     - target: {fileID: 4473545523525431051, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
       propertyPath: m_Name
-      value: TreeDialog
+      value: MAJOR ADVISOR
       objectReference: {fileID: 0}
     - target: {fileID: 4473545523525431054, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
       propertyPath: m_RootOrder
@@ -1223,41 +1202,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
---- !u!1 &1361633300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4473545523525431051, guid: 718d4053cd68ed34b9de2dc1f2b97d6a, type: 3}
-  m_PrefabInstance: {fileID: 865385097}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1361633308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361633300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Toxic????
-  message: I hate you because of who you are
-  children: []
---- !u!114 &1361633309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361633300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: I do play celeste...
-  message: Boy do I have news for you!!!
-  children: []
 --- !u!1 &1669194807
 GameObject:
   m_ObjectHideFlags: 0

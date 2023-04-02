@@ -301,6 +301,21 @@ GameObject:
   - component: {fileID: 4473545523525431049}
   - component: {fileID: 4473545523525431052}
   - component: {fileID: 4301405470219192864}
+  - component: {fileID: 3789175876110452164}
+  - component: {fileID: 4825536573524483852}
+  - component: {fileID: 7957064097424226435}
+  - component: {fileID: 1361633317}
+  - component: {fileID: 1361633318}
+  - component: {fileID: 1361633319}
+  - component: {fileID: 1361633320}
+  - component: {fileID: 1361633323}
+  - component: {fileID: 1361633322}
+  - component: {fileID: 1361633321}
+  - component: {fileID: 7742336612646190790}
+  - component: {fileID: 1521613060852367481}
+  - component: {fileID: 6503374562828142167}
+  - component: {fileID: 4435727377170134952}
+  - component: {fileID: 7909172603394517052}
   m_Layer: 0
   m_Name: TreeDialog
   m_TagString: Untagged
@@ -423,9 +438,262 @@ MonoBehaviour:
   east: {fileID: 21300000, guid: 69586fe3b5e23114b92ee1d81483bb20, type: 3}
   south: {fileID: 21300000, guid: 5ab1cfa22885d074ea955d3fbc70f487, type: 3}
   west: {fileID: 21300000, guid: 88c373c2f3fc8df4aab908553c23215b, type: 3}
-  node: {fileID: 0}
+  node: {fileID: 3789175876110452164}
   optionsParent: {fileID: 1103478693453787964}
   options: {fileID: 7503811092314320065}
+--- !u!114 &3789175876110452164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: null
+  message: Good afternoon UNDELCLARED. Its nice to see your face, even if you're
+    TWO HOURS late!
+  children:
+  - {fileID: 4825536573524483852}
+  - {fileID: 7957064097424226435}
+--- !u!114 &4825536573524483852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Apologize
+  message: Its okay, we all understand that life happens :)
+  children:
+  - {fileID: 1361633317}
+--- !u!114 &7957064097424226435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '"You Waste My Time"'
+  message: Well excuse you!
+  children:
+  - {fileID: 1361633317}
+--- !u!114 &1361633317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: null
+  message: Well anyway, as your MAJOR ADVISOR its my job to see that you find a start
+    to a fufilling career with your education here are Willem and Mike.
+  children:
+  - {fileID: 1361633318}
+--- !u!114 &1361633318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: null
+  message: The day soon approaches to declare your major, and it seems like you have
+    no idea what you want to do! However I'm here to help
+  children:
+  - {fileID: 1361633319}
+--- !u!114 &1361633319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: null
+  message: I'm going to help you decide on a possible major, by asking you some questions!
+    First, do you like money?
+  children:
+  - {fileID: 1361633320}
+  - {fileID: 1361633323}
+--- !u!114 &1361633320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: No
+  message: Great! You'll fit right in as an ART HISTORY MAJOR. If you have any questions,
+    please see the ART HISTORY department.
+  children:
+  - {fileID: 1521613060852367481}
+--- !u!114 &1361633323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Yes
+  message: Mmmmm, well that leaves you with plenty of options. We can go onto the
+    next question; how important do you find personal hygine?
+  children:
+  - {fileID: 1361633322}
+  - {fileID: 1361633321}
+--- !u!114 &1361633322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Practically Useless
+  message: Thats fantastic, you'll fit right in as a COMPUTER SCIENCE major.
+  children:
+  - {fileID: 1521613060852367481}
+--- !u!114 &1361633321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Important
+  message: What a shame, okay well then how do you feel about ROCKS?
+  children:
+  - {fileID: 7742336612646190790}
+  - {fileID: 6503374562828142167}
+--- !u!114 &7742336612646190790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: I LOVE ROCKS
+  message: FANTASTIC, you should definately major in ROCKS!
+  children:
+  - {fileID: 1521613060852367481}
+--- !u!114 &1521613060852367481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: null
+  message: Well that concludes our meeting, I'm sure you're tired and could use some
+    good rest back at your dorm in LION L
+  children: []
+--- !u!114 &6503374562828142167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: This is useless
+  message: Okay buddy! I'm starting to get the sense you don't appreciate the profound
+    insight of your PREMAJOR ADVISOR!
+  children:
+  - {fileID: 7909172603394517052}
+  - {fileID: 4435727377170134952}
+--- !u!114 &4435727377170134952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Fine I'll do English
+  message: Fantastic choice! Although not really that fantastic considering it was
+    YOUR idea and not MINE. I wish you luck as a ENGLISH MAJOR
+  children:
+  - {fileID: 1521613060852367481}
+--- !u!114 &7909172603394517052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473545523525431051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Thats right
+  message: This level of disrespect is COMPLETELY unacceptable, I think I might need
+    to have a talk with my friend CATHY about this!
+  children: []
 --- !u!1 &4473545523852395074
 GameObject:
   m_ObjectHideFlags: 0
