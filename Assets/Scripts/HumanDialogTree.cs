@@ -10,10 +10,14 @@ public class HumanDialogTree: HumanDialogue
     public GameObject optionsParent;
     public TextMeshProUGUI options;
 
+    public DialogTreeNode deadEnd;
+
     protected override void Start()
     {
         base.Start();
         optionsParent.SetActive(false);
+
+        if (Progress.stage == Progress.GameStage.ReturnToBed) node = deadEnd; //hacky state
     }
 
     protected override void LateUpdate()
@@ -71,7 +75,7 @@ public class HumanDialogTree: HumanDialogue
                 Progress.stage = Progress.GameStage.ReturnToBed;
                 break;
             case "WIN":
-                SceneManager.LoadScene("Credits");
+                SceneManager.LoadScene("YouWin");
                 break;
         }
     }
