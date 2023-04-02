@@ -59,8 +59,8 @@ public class Dialog : MonoBehaviour
     private IEnumerator TextReveal(string text, float time)
     {
         revealLock = true;
-        // const float textScrollSpeed = .05f; //lower is faster
-        // time = time * textScrollSpeed * text.Length;
+        const float textScrollSpeed = .05f; //lower is faster
+        time = time * textScrollSpeed * text.Length;
         
         for (float i = 0; i < time; i += Time.deltaTime)
         {
