@@ -947,26 +947,26 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: df79fa62517d8954d8b4773eaf4dd31d, type: 2}
+    m_Data: {fileID: 11400000, guid: 052208bae61120547bfb5c164b067007, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 006dbc56002914c4abbb4194ee4a41e3, type: 2}
+    m_Data: {fileID: 11400000, guid: 83015f82401466a4caf2a2e4cc58b9a5, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: f03a975fb639a6d409667f5f3d3dbf78, type: 2}
+    m_Data: {fileID: 11400000, guid: e0ae3d15ebd0acb4e828cbbcf0cb630d, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 1db1613a7d1bea944b502a69f1c166a5, type: 2}
+    m_Data: {fileID: 11400000, guid: 01fa784301a0e83478fe6c48da50e857, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e44ff73f38d0f034d8278a9c28547380, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 395e0f69b233463419b92466b26713ec, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 2146529770, guid: 919485b823f95c445865c82a9ee1a304, type: 3}
+    m_Data: {fileID: 2122470147, guid: 987d1ab583abd7b41ad979f9cb08bc51, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1842870353, guid: 919485b823f95c445865c82a9ee1a304, type: 3}
+    m_Data: {fileID: -1513142598, guid: 987d1ab583abd7b41ad979f9cb08bc51, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1042104222, guid: 919485b823f95c445865c82a9ee1a304, type: 3}
+    m_Data: {fileID: -1404271870, guid: 987d1ab583abd7b41ad979f9cb08bc51, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2069184364, guid: 919485b823f95c445865c82a9ee1a304, type: 3}
+    m_Data: {fileID: -2020546848, guid: 987d1ab583abd7b41ad979f9cb08bc51, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 641680c7c5f41bb41b53c6151b27c33f, type: 3}
   - m_RefCount: 1
@@ -1026,7 +1026,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnDir
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.x
@@ -7123,7 +7123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8731232646829950657, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: startingDirection
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
@@ -7136,7 +7136,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnDir
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.x

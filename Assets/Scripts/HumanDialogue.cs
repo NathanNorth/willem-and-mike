@@ -7,39 +7,28 @@ public class HumanDialogue : Dialog
 {
     public Dir startingDirection = Dir.South;
 
+    public Sprite north;
+    public Sprite east;
+    public Sprite south;
+    public Sprite west;
 
-    private Vector2 _dir; //holds player direction
+    // private Vector2 _dir; //holds player direction
     private Animator _animator;
     private static readonly int X = Animator.StringToHash("X");
     private static readonly int Y = Animator.StringToHash("Y");
-    
-    public enum Dir
+
+    private SpriteRenderer spriteRenderer;
+
+    private Sprite[] Dirs()
     {
-        North, South, East, West
+        return new[]{ north, east, south, west };
     }
 
     private void Start()
     {
-        _dir = startingDirection switch
-        {
-            Dir.North => Vector2.up,
-            Dir.South => Vector2.down,
-            Dir.East => Vector2.right,
-            Dir.West => Vector2.left,
-            _ => _dir
-        };
-
-        _animator = GetComponent<Animator>();
-        _animator.SetFloat(X, _dir.x);
-        _animator.SetFloat(Y, _dir.y);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = Dirs()[(int) startingDirection];
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
 
     public override void TriggerDialog(Player player)
     {
@@ -47,28 +36,20 @@ public class HumanDialogue : Dialog
         FacePlayer(player.transform.position);
     }
 
+    private static readonly Dictionary<Vector2, int> translation = new Dictionary<Vector2, int>()
+    {
+        { new Vector2(0, 1), 0},
+        { new Vector2(1, 0), 1},
+        { new Vector2(0, -1), 2},
+        { new Vector2(-1, 0), 3},
+    };
+
     private void FacePlayer(Vector2 playerPos)
     {
         Vector2 myPos = this.transform.position;
-        
-        if (myPos.x < playerPos.x && (int)myPos.y == (int)playerPos.y) //Player is to the right
-        {
-            _dir = Vector2.right;
-        }
-        else if (myPos.y < playerPos.y && (int)myPos.x == (int)playerPos.x) //Player is up
-        {
-            _dir = Vector2.up;
-        }
-        else if (myPos.y > playerPos.y && (int)myPos.x == (int)playerPos.x) //Player is down
-        {
-            _dir = Vector2.down;
-        }
-        else if (myPos.x > playerPos.x && (int)myPos.y == (int)playerPos.y) //Player is to the left
-        {
-            _dir = Vector2.left;
-        }
-        
-        _animator.SetFloat(X, _dir.x);
-        _animator.SetFloat(Y, _dir.y);
+        Vector2 dir = playerPos - myPos;
+        int ordinal = translation[dir];
+        Sprite sprite = Dirs()[ordinal];
+        spriteRenderer.sprite = sprite;
     }
 }

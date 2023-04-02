@@ -16,11 +16,6 @@ public class Player : MonoBehaviour
     
     private Animator _animator;
 
-    public enum Dir
-    {
-        North, South, East, West
-    }
-
     private Vector2 _dir; // Hold player direction
     private static readonly int X = Animator.StringToHash("X");
     private static readonly int Y = Animator.StringToHash("Y");

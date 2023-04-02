@@ -7,7 +7,7 @@ public class SceneTrigger : MonoBehaviour
 {
     public string destination;
     public Vector2 spawnLoc;
-    public Player.Dir spawnDir;
+    public Dir spawnDir;
     
     public void TriggerSceneChange()
     {
