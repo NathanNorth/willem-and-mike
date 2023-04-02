@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public AudioSource myAudio;
-    public float fadeInDuration = 1;
+    public float fadeDuration = 1;
+
+    public CanvasGroup myCanvas;
+    // private  myImageColor = myImage.color;
+    
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(StartFade(myAudio, fadeInDuration));
+        StartCoroutine(StartFadeIn());
     }
 
     // Update is called once per frame
@@ -17,15 +23,28 @@ public class AudioManager : MonoBehaviour
     {
         
     }
-    
-    public static IEnumerator StartFade(AudioSource myAudio, float fadeInDuration)
+
+    private IEnumerator StartFadeIn()
     {
         float currentTime = 0;
-        const float start = 0;
-        while (currentTime < fadeInDuration)
+        while (currentTime < fadeDuration)
         {
             currentTime += Time.deltaTime;
-            myAudio.volume = Mathf.Lerp(start, 1, currentTime / fadeInDuration);
+            myAudio.volume = Mathf.Lerp(0, 1, currentTime / fadeDuration);
+            myCanvas.alpha = Mathf.Lerp(1, 0, currentTime / fadeDuration);
+            yield return null;
+        }
+        yield break;
+    }
+    
+    public IEnumerator StartFadeOut()
+    {
+        float currentTime = 0;
+        while (currentTime < fadeDuration)
+        {
+            currentTime += Time.deltaTime;
+            myAudio.volume = Mathf.Lerp(1, 0, currentTime / fadeDuration);
+            myCanvas.alpha = Mathf.Lerp(0, 1, currentTime / fadeDuration);
             yield return null;
         }
         yield break;
