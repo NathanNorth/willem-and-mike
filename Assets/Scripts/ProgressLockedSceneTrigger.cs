@@ -25,8 +25,7 @@ public class ProgressLockedSceneTrigger: SceneTrigger
         if(Progress.stage ==  lockUntilStageIs) base.TriggerSceneChange();
         else
         {
-            if(current != null) StopCoroutine(current);
-            current = StartCoroutine(Fade());
+            if(current == null) current = StartCoroutine(Fade());
         }
     }
 
@@ -34,9 +33,18 @@ public class ProgressLockedSceneTrigger: SceneTrigger
     {
         for (float t = fadeTime; t > 0; t -= Time.deltaTime)
         {
-            float percentage = Mathf.Min(t, 1f);
-            group.alpha = percentage;
+            if (t > fadeTime - 1)
+            {
+                group.alpha = (1 - (t - fadeTime + 1)) * 2;
+            }
+            else
+            {
+                float percentage = Mathf.Min(t, 1f);
+                group.alpha = percentage;
+            }
             yield return null;
         }
+
+        current = null;
     }
 }
