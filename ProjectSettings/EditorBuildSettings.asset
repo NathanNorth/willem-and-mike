@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SADLER/OUTSIDE_SADLER.unity
     guid: cdcc2af9eae6940dfa1ddec97f8bf0b2
   - enabled: 1
+    path: Assets/Scenes/UI/Credits.unity
+    guid: aa2f1a95e19aa7c4fb6d47d95f7a85ba
+  - enabled: 1
     path: Assets/Scenes/UI/GameOver.unity
     guid: d6334a948e18bc9499deab145e31e591
   - enabled: 1
