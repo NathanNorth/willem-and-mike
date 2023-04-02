@@ -2981,7 +2981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564469, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_Name
-      value: to outside ISC
+      value: to ggv
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564470, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_RootOrder
