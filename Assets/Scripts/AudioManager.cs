@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager currentManager;
+
     public AudioSource myAudio;
     public float fadeDuration = 1;
 
@@ -15,6 +17,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentManager = this;
         StartCoroutine(StartFadeIn());
     }
 
