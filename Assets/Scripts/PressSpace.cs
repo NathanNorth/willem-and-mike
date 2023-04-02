@@ -14,7 +14,8 @@ public class PressSpace : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            LoadGame();
+            StartCoroutine(AudioManager.currentManager.StartFadeOut());
+            Invoke("LoadGame", AudioManager.currentManager.fadeDuration + .01f);
         }
     }
 }
