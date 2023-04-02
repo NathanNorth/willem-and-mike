@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAudio: {fileID: 214764814277410528}
-  fadeDuration: 1
+  fadeDuration: 0.5
   myCanvas: {fileID: 214764813201457502}
 --- !u!82 &214764814277410528
 AudioSource:
