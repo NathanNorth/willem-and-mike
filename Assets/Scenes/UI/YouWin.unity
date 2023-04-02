@@ -441,6 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: Credits
+  duration: 3
 --- !u!1 &1904516541
 GameObject:
   m_ObjectHideFlags: 0
