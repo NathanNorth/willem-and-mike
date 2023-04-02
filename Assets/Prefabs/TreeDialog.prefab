@@ -301,9 +301,6 @@ GameObject:
   - component: {fileID: 4473545523525431049}
   - component: {fileID: 4473545523525431052}
   - component: {fileID: 4301405470219192864}
-  - component: {fileID: 4546778352306336681}
-  - component: {fileID: 8801583078170630372}
-  - component: {fileID: 533825861410311202}
   m_Layer: 0
   m_Name: TreeDialog
   m_TagString: Untagged
@@ -426,56 +423,9 @@ MonoBehaviour:
   east: {fileID: 21300000, guid: 69586fe3b5e23114b92ee1d81483bb20, type: 3}
   south: {fileID: 21300000, guid: 5ab1cfa22885d074ea955d3fbc70f487, type: 3}
   west: {fileID: 21300000, guid: 88c373c2f3fc8df4aab908553c23215b, type: 3}
-  node: {fileID: 4546778352306336681}
+  node: {fileID: 0}
   optionsParent: {fileID: 1103478693453787964}
   options: {fileID: 7503811092314320065}
---- !u!114 &4546778352306336681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4473545523525431051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: null
-  message: Are you a boy or are you a girl
-  children:
-  - {fileID: 8801583078170630372}
-  - {fileID: 533825861410311202}
---- !u!114 &8801583078170630372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4473545523525431051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Girl
-  message: I love women
-  children: []
---- !u!114 &533825861410311202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4473545523525431051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c99b87a7e0443ca48ce675ded773d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Man
-  message: What a fucking looser I hate masculinity
-  children: []
 --- !u!1 &4473545523852395074
 GameObject:
   m_ObjectHideFlags: 0
