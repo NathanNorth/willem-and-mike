@@ -9,7 +9,7 @@ public class SceneTrigger : MonoBehaviour
     public Vector2 spawnLoc;
     public Dir spawnDir;
     
-    public void TriggerSceneChange()
+    public virtual void TriggerSceneChange()
     {
         Player.spawnLoc = spawnLoc;
         Player.spawnDir = spawnDir;
