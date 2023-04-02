@@ -7419,7 +7419,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: bd196adeb54bef746aeee40ba01fbbaf, type: 3}
     - target: {fileID: 4473545523525431055, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: text.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4473545523525431055, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: startingDirection
@@ -7427,11 +7427,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4473545523525431055, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: text.Array.data[0]
-      value: meow :3
+      value: I hate this class.
       objectReference: {fileID: 0}
     - target: {fileID: 4473545523525431055, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: text.Array.data[1]
-      value: 
+      value: I'm not coded to be able to sit down, so we all have to stand the whole
+        time.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
