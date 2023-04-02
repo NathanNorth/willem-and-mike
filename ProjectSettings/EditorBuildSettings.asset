@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PATH_TO_ISC.unity
     guid: e90beb7ba540567459dc9b545275632c
+  - enabled: 1
+    path: Assets/Scenes/OUTSIDE_GGV.unity
+    guid: 6e639ccd3018f403ea6c49c0d8aa2efe
+  - enabled: 1
+    path: Assets/Scenes/ISC_OUTSIDE.unity
+    guid: e12be511da60c467e86c004e8e637806
   m_configObjects: {}
