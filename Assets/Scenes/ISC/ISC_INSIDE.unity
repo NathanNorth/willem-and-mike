@@ -6045,7 +6045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1927017188, guid: d2ac375c8b4ed7746805541b2de0f86f, type: 3}
       propertyPath: text.Array.data[1]
-      value: You don't know what it's for because you aren't a nerd.
+      value: You don't know what it's for because you aren't a NERD.
       objectReference: {fileID: 0}
     - target: {fileID: 4937886125415785824, guid: d2ac375c8b4ed7746805541b2de0f86f, type: 3}
       propertyPath: m_RootOrder
@@ -7247,7 +7247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1927017188, guid: d2ac375c8b4ed7746805541b2de0f86f, type: 3}
       propertyPath: text.Array.data[1]
-      value: You don't know what it's for because you aren't a nerd.
+      value: You don't know what it's for because you aren't a NERD.
       objectReference: {fileID: 0}
     - target: {fileID: 4937886125415785824, guid: d2ac375c8b4ed7746805541b2de0f86f, type: 3}
       propertyPath: m_RootOrder
@@ -9032,7 +9032,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: bd196adeb54bef746aeee40ba01fbbaf, type: 3}
     - target: {fileID: 4473545523525431051, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: m_Name
-      value: HumanDialog
+      value: business major
       objectReference: {fileID: 0}
     - target: {fileID: 4473545523525431054, guid: 5e85660ec72df3d4f931d6135519baa1, type: 3}
       propertyPath: m_RootOrder
