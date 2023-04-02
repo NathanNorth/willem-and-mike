@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ISC/ISC_INSIDE.unity
     guid: 834da9630477948709ac2b2e0fdc4999
+  - enabled: 1
+    path: Assets/Scenes/SADLER/PATH_TO_SADLER.unity
+    guid: 63c233c3d471e4645a7cba8049229ad1
+  - enabled: 1
+    path: Assets/Scenes/SADLER/OUTSIDE_SADLER.unity
+    guid: cdcc2af9eae6940dfa1ddec97f8bf0b2
   m_configObjects: {}

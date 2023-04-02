@@ -2969,7 +2969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.x
-      value: -9.5
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: spawnLoc.y
@@ -2977,7 +2977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564468, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: destination
-      value: GGV_HALL
+      value: OUTSIDE_GGV
       objectReference: {fileID: 0}
     - target: {fileID: 3818936723328564469, guid: b484e10b0ce73b844ba0863c6ab3bb5f, type: 3}
       propertyPath: m_Name
@@ -7513,7 +7513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2342271745400871073, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.5
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 2342271745400871073, guid: b193fc2e5161a7f478be9199df64c837, type: 3}
       propertyPath: m_LocalPosition.y
